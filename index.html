@@ -1,396 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./CocoShop-ICON/Coco'.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./CocoShop-ICON/Coco'.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./CocoShop-CSS/header.css">
-    <link rel="stylesheet" href="./CocoShop-CSS/index.css">
-    <link rel="stylesheet" href="./CocoShop-CSS/cards-sections.css">
-    <link rel="stylesheet" href="./CocoShop-CSS/footer.css">
-    <title>CocoShop Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./CocoShop-CSS/header.css">
+  <link rel="stylesheet" href="./CocoShop-CSS/navBar.css">
+  <link rel="stylesheet" href="./CocoShop-CSS/index.css">
+  <link rel="stylesheet" href="./CocoShop-CSS/cards-sections.css">
+  <link rel="stylesheet" href="./CocoShop-CSS/footer.css">
+  <title>CocoShop Home</title>
 </head>
+
 <body>
-    
-    <header>
-        <nav>
-            <div class="top-container"> <!-- Social media && contacts -->
-              <ul class="top-left-item-container">
-                  <li class="icon"><a href="https://www.instagram.com/cocoshopcc?igsh=NnJ4eW10cGk2eXps" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                  <li class="icon"><a href="https://www.facebook.com/cocoshopcc?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                  <li class="icon"><a href=""><i class="bi bi-whatsapp" target="_blank"></i></a></li>
-                  <li class="icon"><a href="mailto:cocoshop.cc@hotmail.com" target="_blank"><i class="bi bi-envelope-at"></i></a></li>
-              </ul>
-              <ul class="top-right-item-container"> <!-- Left items for top navbar -->
-                  <li class="link"><a href="">Buscar tienda</a> |</li>
-                  <li class="link"><a href="">Ayuda</a> |</li>
-                  <li class="link"><a href="">Únete a nosotros</a> |</li>
-                  <li class="link"><a href="">Iniciar sesión</a></li>
-              </ul>
-          </div>
-          <div class="middle-container bg-light">
-            <div class="middle-left-item-container">
-                <ul> <!-- left space for middle navbar -->
-                <li><a href=""><img src="./CocoShop-ICON/Coco'.png" alt="micro logo"></a></li>
+
+  <header class="d-none d-sm-none d-md-block"> <!-- Header CSS in ./CocoShop-CSS/header.css -->
+    <div class="top-container"> <!-- Social media && contacts -->
+      <ul class="top-left-item-container">
+        <li class="icon"><a href="https://www.instagram.com/cocoshopcc?igsh=NnJ4eW10cGk2eXps" target="_blank"><i
+              class="bi bi-instagram"></i></a></li>
+        <li class="icon"><a href="https://www.facebook.com/cocoshopcc?mibextid=LQQJ4d" target="_blank"><i
+              class="bi bi-facebook"></i></a></li>
+        <li class="icon"><a href=""><i class="bi bi-whatsapp" target="_blank"></i></a></li>
+        <li class="icon"><a href="mailto:cocoshop.cc@hotmail.com" target="_blank"><i class="bi bi-envelope-at"></i></a>
+        </li>
+      </ul>
+      <ul class="top-right-item-container"> <!-- Left items for top navbar -->
+        <li class="link"><a href="">Buscar tienda</a> |</li>
+        <li class="link"><a href="">Ayuda</a> |</li>
+        <li class="link"><a href="">Únete a nosotros</a> |</li>
+        <li class="link"><a href="">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- NavBar -->
+   
+  <nav class="sticky-md-top navbar navbar-expand-md bg-body-tertiary"> <!-- NavBar CSS in ./CocoShop-CSS/navBar.css -->
+    <div class="middle-container container-fluid flex-wrap">
+      <div class="middle-left-item-container">
+         <!-- left space for middle navbar -->
+        <a class="navbar-brand" href=""><img src="./CocoShop-ICON/Coco'.png" alt="micro logo"></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- middle space for middle navbar -->
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <div class="middle-middle-item-container d-md-flex">
+          <div class="dropdown-link me-3">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Novedades
+                </a>
+                <ul class="dropdown-menu me-3">
+                  <li><a class="dropdown-item" href="#">Para el cole</a></li>
+                  <li><a class="dropdown-item" href="#">Se el/la más sport</a></li>
+                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                </ul>
+              </li>
             </ul>
-            </div>
-          <!-- middle space for middle navbar -->
-          <div class="middle-middle-item-container d-flex">
-            <div class="dropdown-link me-3">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Novedades
-                  </a>
-                  <ul class="dropdown-menu me-3">
-                    <li><a class="dropdown-item" href="#">Para el cole</a></li>
-                    <li><a class="dropdown-item" href="#">Se el/la más sport</a></li>
-                    <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="dropdown-link me-3">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Hombre
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Calzados</a></li>
-                    <li><a class="dropdown-item" href="#">Vestimentas</a></li>
-                    <li><a class="dropdown-item" href="#">Prendas</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="dropdown-link me-3">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Mujer
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Calzados</a></li>
-                    <li><a class="dropdown-item" href="#">Vestimentas</a></li>
-                    <li><a class="dropdown-item" href="#">Prendas</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="dropdown-link me-3">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Niño/a
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Calzados</a></li>
-                    <li><a class="dropdown-item" href="#">Vestimentas</a></li>
-                    <li><a class="dropdown-item" href="#">Prendas</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="dropdown-link">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Ofertas
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ofertas del mes</a></li>
-                    <li><a class="dropdown-item" href="#">Para el cole</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-          </div>          
-          <!-- right space for middle navbar -->
-           <div class="middle-rigth-item-container">
-            <ul>
-              <li><a href=""><i class="bi bi-bookmark-heart"></i></a></li>
-              <li><a href=""><i class="bi bi-bag"></i></a></li>
-            </ul>
-           </div>
           </div>
-               <!-- Adds Carousel -->
-<div id="" class="carousel slide" data-bs-ride="carousel">
+          <div class="dropdown-link me-3">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Hombre
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Calzados</a></li>
+                  <li><a class="dropdown-item" href="#">Vestimentas</a></li>
+                  <li><a class="dropdown-item" href="#">Prendas</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-link me-3">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Mujer
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Calzados</a></li>
+                  <li><a class="dropdown-item" href="#">Vestimentas</a></li>
+                  <li><a class="dropdown-item" href="#">Prendas</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-link me-3">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Niño/a
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Calzados</a></li>
+                  <li><a class="dropdown-item" href="#">Vestimentas</a></li>
+                  <li><a class="dropdown-item" href="#">Prendas</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-link">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Ofertas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ofertas del mes</a></li>
+                  <li><a class="dropdown-item" href="#">Para el cole</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- right space for middle navbar -->
+  
+        <div class="middle-rigth-item-container d-flex">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href=""><i class="bi bi-bookmark-heart"></i></a></li>
+            <li class="nav-item"><a href=""><i class="bi bi-bag"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <!-- The slideshow/carousel -->
-  <div class="carousel-inner text-center">
-    <div class="carousel-item active">
+  <!-- Adds Carousel -->
+
+  <div id="" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- The slideshow/carousel -->
+
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active">
         <h5 class="d-block">Pagos contra entrega disponibles</h5>
         <p>Cuando haces una compra, aqui en Coco'shop te damos la opcion de pagar como quieras!
-          <a href="#" style="font-weight: 700; color: #0c0c0c;">Obtén mas infomación</a></p>
-    </div>
-    <div class="carousel-item">
+          <a href="#" style="font-weight: 700; color: #0c0c0c;">Obtén mas infomación</a>
+        </p>
+      </div>
+      <div class="carousel-item">
         <h5 class="d-block">Compra novedades</h5>
         <a href="#" style="font-weight: 700; color: #0c0c0c;">Comprar</a>
+      </div>
     </div>
   </div>
-</div>
-        </nav>
-    </header>
 
-    <section>
+  <section>
+
     <!-- Carousel -->
-<div id="coco-adds" class="carousel slide" data-bs-ride="carousel">
 
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#coco-adds" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#coco-adds" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#coco-adds" data-bs-slide-to="2"></button>
-    </div>
-    
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./CocoShop-ICON/Coco'Shop.ico.png" alt="coco's logo" class="d-block" style="height: 35vw; width:100%">
-        <div class="carousel-caption">
-          <!--<h3>Los Angeles</h3>
+    <div id="coco-adds" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#coco-adds" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#coco-adds" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#coco-adds" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./CocoShop-ICON/Coco'Shop.ico.png" alt="coco's logo" class="d-block"
+            style="height: 35vw; width:100%">
+          <div class="carousel-caption">
+
+            <!--<h3>Los Angeles</h3>
           <p>We had such a great time in LA!</p>-->
+
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./CocoShop-ICON/promo.jpg" alt="coco's promo" class="d-block" style="height: 35vw; width:100%">
-        <div class="carousel-caption">
-          <!--<h3>Chicago</h3>
+        <div class="carousel-item">
+          <img src="./CocoShop-ICON/promo.jpg" alt="coco's promo" class="d-block" style="height: 35vw; width:100%">
+          <div class="carousel-caption">
+
+            <!--<h3>Chicago</h3>
           <p>Thank you, Chicago!</p>-->
-        </div> 
-      </div>
-      <div class="carousel-item">
-        <img src="./CocoShop-ICON/promo1.jpg" alt="coco's promo 2" class="d-block" style="height: 35vw; width:100%">
-        <div class="carousel-caption">
-        <!--<h3>New York</h3>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./CocoShop-ICON/promo1.jpg" alt="coco's promo 2" class="d-block" style="height: 35vw; width:100%">
+          <div class="carousel-caption">
+
+            <!--<h3>New York</h3>
           <p>We love the Big Apple!</p> -->
-        </div>  
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#coco-adds" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#coco-adds" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- NEW SECTION -->
+  <!-- Producs -->
+
+  <section>
+    <h2 class="mt-5 ms-5">Adentrate a nuestro Coco's Closet</h2>
+    <div class="products">
+      <div class="container-fluid d-flex">
+
+        <!-- first card -->
+
+        <div class="card" style="width: 50rem;">
+          <a href="#"><img src="./CocoShop-ICON/product.panoxyl1.jpg" class="card-img-top"
+              alt="cuidado para la piel"></a>
+          <div class="card-body">
+            <h5 class="card-text">Cuidado para la piel</h5>
+          </div>
+        </div>
+
+        <!-- second card -->
+
+        <div class="card" style="width: 50rem;">
+          <a href="#"><img src="./CocoShop-ICON/product.shirt.red.jpg" class="card-img-top"
+              alt="vestuarios.hombres"></a>
+          <div class="card-body">
+            <h5 class="card-text">Camisas casuales</h5>
+          </div>
+        </div>
+
+        <!-- third card -->
+
+        <div class="card" style="width: 50rem;">
+          <a href="#"><img src="./CocoShop-ICON/product.shoes.charol.jpg" class="card-img-top"
+              alt="calzados.hombres"></a>
+          <div class="card-body">
+            <h5 class="card-text">Zapatos para vestir</h5>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#coco-adds" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#coco-adds" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-    </section>
-    <!-- NEW SECTION -->
-    <!-- Producs -->
-     <section>
-      <h2 class="mt-5 ms-5">Adentrate a nuestro Coco's Closet</h2>
-      <div class="products">
-        <div class="container-fluid d-flex">
-          <!-- first card -->
-          <div class="card" style="width: 50rem;">
-            <a href="#"><img src="./CocoShop-ICON/product.panoxyl1.jpg" class="card-img-top" alt="cuidado para la piel"></a>
-            <div class="card-body">
-              <h5 class="card-text">Cuidado para la piel</h5>
-            </div>
+  </section>
+  </section>
+
+  <!-- NEW SECTION -->
+  <!-- Producs -->
+
+  <section>
+    <h2 class="mt-5 ms-5">Mira nuestra coleccion de calzados</h2>
+    <div class="products-square">
+      <div class="container-fluid d-flex">
+
+        <!-- first card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/calzado.hombre0.jpg" class="card-img-top" alt="calzados"></a>
+          <div class="card-body">
+            <h5 class="card-text">Dale un vistazo a nuestros calzados de caballeros</h5>
           </div>
-          <!-- second card -->
-          <div class="card" style="width: 50rem;">
-            <a href="#"><img src="./CocoShop-ICON/product.shirt.red.jpg" class="card-img-top" alt="vestuarios.hombres"></a>
-            <div class="card-body">
-              <h5 class="card-text">Camisas casuales</h5>
-            </div>
+        </div>
+
+        <!-- second card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/calzado.mujer0.jpg" class="card-img-top" alt="calzados.mujer"></a>
+          <div class="card-body">
+            <h5 class="card-text">Hechale el ojo a nuestros calzados de damas</h5>
           </div>
-          <!-- third card -->
-          <div class="card" style="width: 50rem;">
-            <a href="#"><img src="./CocoShop-ICON/product.shoes.charol.jpg" class="card-img-top" alt="calzados.hombres"></a>
-            <div class="card-body">
-              <h5 class="card-text">Zapatos para vestir</h5>
-            </div>
+        </div>
+
+        <!-- third card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/calzado.mujer1.jpg" class="card-img-top" alt="calzado.mujer"></a>
+          <div class="card-body">
+            <h5 class="card-text">Las que no te pueden faltar</h5>
           </div>
         </div>
       </div>
-     </section>
-    </section>
-    <!-- NEW SECTION -->
-    <!-- Producs -->
-    <section>
-      <h2 class="mt-5 ms-5">Mira nuestra coleccion de calzados</h2>
-      <div class="products-square">
-        <div class="container-fluid d-flex">
-          <!-- first card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/calzado.hombre0.jpg" class="card-img-top" alt="calzados"></a>
-            <div class="card-body">
-              <h5 class="card-text">Dale un vistazo a nuestros calzados de caballeros</h5>
-            </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION -->
+  <!-- Producs -->
+
+  <section>
+    <h2 class="mt-5 ms-5">Mira nuestra coleccion de calzados</h2>
+    <div class="products-square">
+      <div class="container-fluid d-flex">
+
+        <!-- first card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/botasparadama.jpg" class="card-img-top" alt="botas de dama"></a>
+          <div class="card-body">
+            <h5 class="card-text">Shain</h5>
+            <span>Zapatos</span> <br>
+            <span>RD$1200</span>
           </div>
-          <!-- second card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/calzado.mujer0.jpg" class="card-img-top" alt="calzados.mujer"></a>
-            <div class="card-body">
-              <h5 class="card-text">Hechale el ojo a nuestros calzados de damas</h5>
-            </div>
+        </div>
+
+        <!-- second card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/tenisparadamas.jpg" class="card-img-top" alt="tenis de damas"></a>
+          <div class="card-body">
+            <h5 class="card-text">PUMA</h5>
+            <span>Zapatos</span> <br>
+            <span>RD$550</span>
           </div>
-          <!-- third card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/calzado.mujer1.jpg" class="card-img-top" alt="calzado.mujer"></a>
-            <div class="card-body">
-              <h5 class="card-text">Las que no te pueden faltar</h5>
-            </div>
+        </div>
+
+        <!-- third card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/zapatosparacaballeros.jpg" class="card-img-top" alt="zapatos Rass"></a>
+          <div class="card-body">
+            <h5 class="card-text">Rass</h5>
+            <span>Zapatos</span> <br>
+            <span>RD$550</span>
           </div>
         </div>
       </div>
-     </section>
-    <!-- NEW SECTION -->
-    <!-- Producs -->
-    <section>
-      <h2 class="mt-5 ms-5">Mira nuestra coleccion de calzados</h2>
-      <div class="products-square">
-        <div class="container-fluid d-flex">
-          <!-- first card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/botasparadama.jpg" class="card-img-top" alt="botas de dama"></a>
-            <div class="card-body">
-              <h5 class="card-text">Shain</h5>
-              <span>Zapatos</span> <br>
-              <span>RD$1200</span>
-            </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION -->
+  <!-- Producs -->
+
+  <section>
+    <h2 class="mt-5 ms-5">No te pierdas las ofertas</h2>
+    <div class="products">
+      <div class="container-fluid d-flex">
+
+        <!-- first card -->
+
+        <div class="card" style="width: 50rem;">
+          <a href="#"><img src="./CocoShop-ICON/Coco'Shop.ico.png" class="card-img-top" alt="10%off.promo"></a>
+          <div class="card-body">
+            <h5 class="card-text">Aprovecha nuestro 10% de descuento</h5>
           </div>
-          <!-- second card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/tenisparadamas.jpg" class="card-img-top" alt="tenis de damas"></a>
-            <div class="card-body">
-              <h5 class="card-text">PUMA</h5>
-              <span>Zapatos</span> <br>
-              <span>RD$550</span>
-            </div>
+        </div>
+
+        <!-- second card -->
+
+        <div class="card" style="width: 50rem;">
+          <a href="#"><img src="./CocoShop-ICON/BlackFriday.jpg" class="card-img-top" alt="blackfriday.promo"></a>
+          <div class="card-body">
+            <h5 class="card-text">Te esperamos en Black Friday</h5>
           </div>
-          <!-- third card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/zapatosparacaballeros.jpg" class="card-img-top" alt="zapatos Rass"></a>
-            <div class="card-body">
-              <h5 class="card-text">Rass</h5>
-              <span>Zapatos</span> <br>
-              <span>RD$550</span>
-            </div>
+        </div>
+
+        <!-- third card -->
+
+        <div class="card" style="width: 50rem;">
+          <a href="#"><img src="./CocoShop-ICON/hotDeals.jpg" class="card-img-top" alt="20%off.promo"></a>
+          <div class="card-body">
+            <h5 class="card-text">Tambien tenemos 20% en articulos seleccionados</h5>
           </div>
         </div>
       </div>
-     </section>
-    <!-- NEW SECTION -->
-    <!-- Producs -->
-     <section>
-      <h2 class="mt-5 ms-5">No te pierdas las ofertas</h2>
-      <div class="products">
-        <div class="container-fluid d-flex">
-          <!-- first card -->
-          <div class="card" style="width: 50rem;">
-            <a href="#"><img src="./CocoShop-ICON/Coco'Shop.ico.png" class="card-img-top" alt="10%off.promo"></a>
-            <div class="card-body">
-              <h5 class="card-text">Aprovecha nuestro 10% de descuento</h5>
-            </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION -->
+  <!-- Producs -->
+
+  <section>
+    <h2 class="mt-5 ms-5">Novedades</h2>
+    <div class="products-square">
+      <div class="container-fluid d-flex">
+
+        <!-- first card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/reloj.inteligente.jpg" class="card-img-top" alt="prenda"></a>
+          <div class="card-body">
+            <h5 class="card-text">Samsung Galaxy Watch 4</h5>
+            <span>Smart Watch</span> <br>
+            <span>RD$9,500</span>
           </div>
-          <!-- second card -->
-          <div class="card" style="width: 50rem;">
-            <a href="#"><img src="./CocoShop-ICON/BlackFriday.jpg" class="card-img-top" alt="blackfriday.promo"></a>
-            <div class="card-body">
-              <h5 class="card-text">Te esperamos en Black Friday</h5>
-            </div>
+        </div>
+
+        <!-- second card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/mortalkombat.ps4.jpg" class="card-img-top"
+              alt="cd ps4 mortal kombat"></a>
+          <div class="card-body">
+            <h5 class="card-text">PS4</h5>
+            <span>PS4'S CD</span> <br>
+            <span>RD$800</span>
           </div>
-          <!-- third card -->
-          <div class="card" style="width: 50rem;">
-            <a href="#"><img src="./CocoShop-ICON/hotDeals.jpg" class="card-img-top" alt="20%off.promo"></a>
-            <div class="card-body">
-              <h5 class="card-text">Tambien tenemos 20% en articulos seleccionados</h5>
-            </div>
+        </div>
+
+        <!-- third card -->
+
+        <div class="card" style="width: 65rem;">
+          <a href="#"><img src="./CocoShop-ICON/novedades1.jpg" class="card-img-top" alt="cuna"></a>
+          <div class="card-body">
+            <h5 class="card-text">Simmons</h5>
+            <span>Cuna</span> <br>
+            <span>RD$23,000</span>
           </div>
         </div>
       </div>
-     </section>
-    <!-- NEW SECTION -->
-    <!-- Producs -->
-    <section>
-      <h2 class="mt-5 ms-5">Novedades</h2>
-      <div class="products-square">
-        <div class="container-fluid d-flex">
-          <!-- first card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/reloj.inteligente.jpg" class="card-img-top" alt="prenda"></a>
-            <div class="card-body">
-              <h5 class="card-text">Samsung Galaxy Watch 4</h5>
-              <span>Smart Watch</span> <br>
-              <span>RD$9,500</span>
-            </div>
-          </div>
-          <!-- second card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/mortalkombat.ps4.jpg" class="card-img-top" alt="cd ps4 mortal kombat"></a>
-            <div class="card-body">
-              <h5 class="card-text">PS4</h5>
-              <span>PS4'S CD</span> <br>
-              <span>RD$800</span>
-            </div>
-          </div>
-          <!-- third card -->
-          <div class="card" style="width: 65rem;">
-            <a href="#"><img src="./CocoShop-ICON/novedades1.jpg" class="card-img-top" alt="cuna"></a>
-            <div class="card-body">
-              <h5 class="card-text">Simmons</h5>
-              <span>Cuna</span> <br>
-              <span>RD$23,000</span>
-            </div>
-          </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION -->
+  <!-- Producs -->
+
+  <section>
+    <h2 class="mt-5 ms-5">Descubrir más</h2>
+    <div class="closet-division">
+
+      <!-- men -->
+
+      <div class="card text-bg-dark" style="width: 65rem;">
+        <img src="./CocoShop-ICON/mujer.jpg" class="card-img" alt="mujer">
+        <div class="card-img-overlay">
+          <button type="button" class="card-title btn btn-outline-secondary"><a href="">Mujer</a></button>
         </div>
       </div>
-     </section>
-    <!-- NEW SECTION -->
-    <!-- Producs -->
-     <section>
-      <h2 class="mt-5 ms-5">Descubrir más</h2>
-      <div class="closet-division">
-        <!-- men -->
-        <div class="card text-bg-dark" style="width: 65rem;">
-          <img src="./CocoShop-ICON/mujer.jpg" class="card-img" alt="mujer">
-          <div class="card-img-overlay">
-            <button type="button" class="card-title btn btn-outline-secondary"><a href="">Mujer</a></button>
-          </div>
-        </div>
-        <!-- women -->
-        <div class="card text-bg-dark" style="width: 65rem;">
-          <img src="./CocoShop-ICON/hombre.jpg" class="card-img" alt="mujer">
-          <div class="card-img-overlay">
-            <button type="button" class="card-title btn btn-outline-secondary"><a href="">Hombre</a></button>
-          </div>
-        </div>
-        <!-- kids -->
-        <div class="card text-bg-dark" style="width: 65rem;">
-          <img src="./CocoShop-ICON/niñ@.jpg" class="card-img" alt="mujer">
-          <div class="card-img-overlay">
-            <button type="button" class="card-title btn btn-outline-secondary"><a href="">Niño/a</a></button>
-          </div>
+
+      <!-- women -->
+
+      <div class="card text-bg-dark" style="width: 65rem;">
+        <img src="./CocoShop-ICON/hombre.jpg" class="card-img" alt="mujer">
+        <div class="card-img-overlay">
+          <button type="button" class="card-title btn btn-outline-secondary"><a href="">Hombre</a></button>
         </div>
       </div>
-     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <!-- kids -->
+
+      <div class="card text-bg-dark" style="width: 65rem;">
+        <img src="./CocoShop-ICON/niñ@.jpg" class="card-img" alt="mujer">
+        <div class="card-img-overlay">
+          <button type="button" class="card-title btn btn-outline-secondary"><a href="">Niño/a</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </body>
+
 <footer class="container mt-5 border-top">
-    <div class="foot-page card-footer">
-        <span>© 2024 Jeansy Peña, Inc. Todos los derechos reservados</span>
-            <ul>
-              <li class="me-4"><a href="./CocoShop-HTML/termsOfUse.html">Términos de uso</a></li>
-              <li class="me-4"><a href="./CocoShop-HTML/termsOfSales.html"> Términos de venta</a></li>
-              <li class="me-4"><a href="./CocoShop-HTML/avisoLegal.html">Aviso Legal</a></li>
-              <li class="me-4"><a href="./CocoShop-HTML/policyofPrivacyAndCookies.html">Politica de privacidad y cookies</a></li>
-              <li class="me-4"><a href="">Configuracion de privacidad y cookies</a></li>
-            </ul>
-    </div>
+  <div class="foot-page card-footer">
+    <span>© 2024 Jeansy Peña, Inc. Todos los derechos reservados</span>
+    <ul>
+      <li class="me-4"><a href="./CocoShop-HTML/termsOfUse.html">Términos de uso</a></li>
+      <li class="me-4"><a href="./CocoShop-HTML/termsOfSales.html"> Términos de venta</a></li>
+      <li class="me-4"><a href="./CocoShop-HTML/avisoLegal.html">Aviso Legal</a></li>
+      <li class="me-4"><a href="./CocoShop-HTML/policyofPrivacyAndCookies.html">Politica de privacidad y cookies</a>
+      </li>
+      <li class="me-4"><a href="">Configuracion de privacidad y cookies</a></li>
+    </ul>
+  </div>
 </footer>
+
 </html>

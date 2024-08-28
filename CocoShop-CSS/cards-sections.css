@@ -9,11 +9,11 @@
 
 .products .card img{
     height: 50rem;
-    transition: all 0.5s;
+    transition: all 10s;
 }
 
 .products .card img:hover{
-    transform: scale(0.99);
+    transform: scale(0.95);
 }
 
 /* square cards */
@@ -27,11 +27,11 @@
 
 .products-square .card img{
     height: 30rem;
-    transition: all 0.5s;
+    transition: all 10s;
 }
 
 .products-square .card img:hover{
-    transform: scale(0.99);
+    transform: scale(0.95);
 }
 
 .closet-division{
