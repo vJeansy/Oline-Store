@@ -1,13 +1,52 @@
-*{
+*{ /* responsive format */
     box-sizing: border-box;
     margin: 0;
-    padding: 0; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
 }
-
+/* body style */
 body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+}
+/* top links */
+header a{ /* hover effect for social media icon and links in the top page */
+    color: #0c0b0b;
+    text-decoration: none;
+    font-size: 12px;
+}
+header a:hover, i:hover{ /* hover effect for social media icon and links in the top page */
+    color: #6c6c6c;
+    text-decoration-line: underline;
+}
+/* navBar style */
+section nav a img{ /* img for logotype in navBar */
+    height: 45px;
+    border-radius: 50%;
+}
+.nav-item:hover{ /* nav links hover */
+    text-decoration-line: underline;
+}
+/* navBar style for smaller screen */
+@media (min-width: 992px){ /* Make sure to remove hover dropdown from small devices */
+    .nav-item:hover .dropdown-menu{
+    display: block;
+    }
+}
+/* footer style */
+footer ul li a, span{
+    color: #727272;
+}
+footer ul li a:hover{ /* footer hover style */
+    color: #0c0b0b;
+}
+/* footer style for smaller screen */
+@media (max-width: 767px){ /* make sure to have top margin in footer for small devices */
+    footer ul li{
+        margin-top: 10px;
+    }
 }
