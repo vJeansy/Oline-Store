@@ -1,0 +1,101 @@
+[
+    {
+        "nombre": "Botas Hunter",
+        "precio": 4500,
+        "descripcion": "Botas de trabajo",
+        "cantidad_fotos": 1,
+        "carpeta": "imagenes/productos/calzados/calzados.hombre/botas hunter/",
+        "tipo": "Producto",
+        "categoria": "Calzados para hombre"
+    },
+    {
+        "nombre": "Zapatos de charol",
+        "precio": 3700,
+        "descripcion": "Zapatos para vestir",
+        "cantidad_fotos": 3,
+        "carpeta": "imagenes/productos/calzados/calzados.hombre/Zapatos de Charol/",
+        "tipo": "Producto",
+        "categoria": "Calzados para hombre"
+    },
+    {
+        "nombre": "Camisa playera roja",
+        "precio": 1100,
+        "descripcion": "Camiseta roja",
+        "cantidad_fotos": 3,
+        "carpeta": "imagenes/productos/vestimentas/vestimentas.hombre/camisa playera roja/",
+        "tipo": "Producto",
+        "categoria": "Vestimenta para hombre"
+    },
+    {
+        "nombre": "Botines negros",
+        "precio": 2600,
+        "descripcion": "Botines negros para dama",
+        "cantidad_fotos": 1,
+        "carpeta": "imagenes/productos/calzados/calzados.mujer/Botines negro/",
+        "tipo": "Producto",
+        "categoria": "Calzados para mujes"
+    },
+    {
+        "nombre": "Botines negros",
+        "precio": 2600,
+        "descripcion": "Botines negros para dama",
+        "cantidad_fotos": 2,
+        "carpeta": "imagenes/productos/calzados/calzados.mujer/Tenis puma/",
+        "tipo": "Producto",
+        "categoria": "Calzados para mujes"
+    },
+    {
+        "nombre": "Zapatillas Adriana pappel",
+        "precio": 1900,
+        "descripcion": "Zapatillas altas",
+        "cantidad_fotos": 1,
+        "carpeta": "imagenes/productos/calzados/calzados.mujer/Zapatillas Adriana pappel/",
+        "tipo": "Producto",
+        "categoria": "Calzados para mujes"
+    },
+    {
+        "nombre": "Zapatillas nine west",
+        "precio": 1600,
+        "descripcion": "Zapatillas altas",
+        "cantidad_fotos": 1,
+        "carpeta": "imagenes/productos/calzados/calzados.mujer/Zapatillas nine west/",
+        "tipo": "Producto",
+        "categoria": "Calzados para mujes"
+    },
+    {
+        "nombre": "CD PS4 | Mortal Kmobat XL",
+        "precio": 1100,
+        "descripcion": "Juego para PS4",
+        "cantidad_fotos": 1,
+        "carpeta": "imagenes/productos/novedades/CD PS4  Mortal Kmobat XL/",
+        "tipo": "Producto",
+        "categoria": "Novedades"
+    },
+    {
+        "nombre": "Cuna Simon",
+        "precio": 15600,
+        "descripcion": "Cuna Simon para bebes",
+        "cantidad_fotos": 1,
+        "carpeta": "imagenes/productos/novedades/Cuna Simon/",
+        "tipo": "Producto",
+        "categoria": "Novedades"
+    },
+    {
+        "nombre": "Panoxyl",
+        "precio": 950,
+        "descripcion": "Jabon Panoxyl | cuidado para la cara",
+        "cantidad_fotos": 2,
+        "carpeta": "imagenes/productos/novedades/Panoxyl/",
+        "tipo": "Producto",
+        "categoria": "Novedades"
+    },
+    {
+        "nombre": "SmartWatch Samsung",
+        "precio": 5000,
+        "descripcion": "Reloj inteligente Samsung",
+        "cantidad_fotos": 1,
+        "carpeta": "imagenes/productos/novedades/SmartWatch Samsung/",
+        "tipo": "Producto",
+        "categoria": "Novedades"
+    }
+]
