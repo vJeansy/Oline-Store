@@ -34,14 +34,25 @@ document.getElementById('signUpModalS').innerHTML = `
                 </div>
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="inputPassword1">
+                <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="inputPassword2">
+            </div>
+        <div class="row">
+            <div class="mb-3 col">
+            <label for"gender">Gender</label>
+            <select class="form-select" aria-label="Default select example"">
+            <option selected>Select an option</option>
+            <option value=1>Masculino</option>
+            <option value=2>Femenino</option>
+            <option value=3>Los 98 otros tipos de gay</option>
+            </select>
             </div>
             <!-- Check mark -->
-            <div class="mb-3 form-check">
+            <div class="m-4 form-check col">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Sign me up</label>
+                <label class="form-check-label" for="exampleCheck1">Sign me in</label>
             </div>
+        </div>
             </form>
         </div>
           <div class="modal-footer">
@@ -65,17 +76,17 @@ document.getElementById('signInModalS').innerHTML = `
          <div class="modal-body">
             <form>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail2" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleInputPassword3" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword3">
             </div>
             <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Stay sign in</label>
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Stay sign in</label>
             </div>
             </form>
         </div>

@@ -40,7 +40,7 @@ function jsonProducts(){
         // Filter and show products by category
         const vestimentaHombre = products.filter(p => p.categoria === "Vestimenta para hombre");
         const calzadosHombre = products.filter(p => p.categoria === "Calzados para hombre");
-        const calzadosMujer = products.filter(p => p.categoria === "Calzados para mujes");
+        const calzadosMujer = products.filter(p => p.categoria === "Calzados para mujer");
         const ofertas = products.filter(p => p.categoria === "Ofertas");
         const novedades = products.filter(p => p.categoria === "Novedades");
 
@@ -57,6 +57,7 @@ function jsonProducts(){
 
 // Container for product cards
 function rows(container, n_products){
+    container.innerHTML= '';
     var nRows = Math.ceil(n_products / 3);
     for(var i = 1; i <= nRows; i++){
         container.innerHTML += `<div class="row" id="rows-${i}"></div>`;
@@ -74,13 +75,17 @@ function showCard(art, container, n_products){
                 document.getElementById('rows-' + i).innerHTML += `
                 <div class="col-md-4 my-3">
                     <div class="card">
-                    <img src="${art[id].carpeta}1.jpg" alt="${art[id].nombre}" class="card-img-top" style="width: auto; height: 350px;">
+                    <img src="${art[id].carpeta}1.jpg" alt="${art[id].nombre}" class="card-img-top" style="width: auto; height: 500px;">
                     <div class="card-body text-justify">
-                        <h5 class="card-title fs-3">${art[id].nombre}</h5>
-                        <span class="badge badge-success w-100 mb-2"><h5 class="m-0 text-bg-dark">RD$ ${art[id].precio.toLocaleString('en-US')}</h5></span>
-                        <p class="card-text">${art[id].descripcion}</p>
-                        <button onclick="verFotos(${id})" class="btn btn-warning w-100 my-2" data-toggle="modal" data-target="#Modal">Ver fotos</button>
-                        <button onclick="comprarProducto(${id})" class="btn btn-success w-100 my-2" data-toggle="modal" data-target="#Modal">Comprar <i class="fab fa-whatsapp"></i></button>
+                        <h5 class="card-title fs-5">${art[id].nombre}</h5>
+                        <p class="card-text text-secondary fs-6">${art[id].descripcion}</p>
+                        <span class="w-100">
+                        <h5 class="m-0 text-dark">RD$ ${art[id].precio.toLocaleString('en-US')}
+                        </h5></span>
+                        <div class="row">
+                        <button onclick="verFotos(${id})" class="btn btn-warning w-100 col m-2" data-toggle="modal" data-target="#Modal">Ver fotos</button>
+                        <button onclick="comprarProducto(${id})" class="btn btn-success w-100 col m-2" data-toggle="modal" data-target="#Modal">Comprar <i class="fab fa-whatsapp"></i></button>
+                        </div>
                     </div>
                     </div>
                 </div>

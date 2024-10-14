@@ -50,3 +50,25 @@ footer ul li a:hover{ /* footer hover style */
         margin-top: 10px;
     }
 }
+/* coco's brand*/
+#coco-brand section h1{
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #181717;
+}
+/* sections where cards shows */
+#sections h2{
+    font-size: larger;
+    margin: 30px;
+    padding: 10px;
+    border-style:groove;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}

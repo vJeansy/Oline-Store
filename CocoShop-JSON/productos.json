@@ -33,7 +33,7 @@
         "cantidad_fotos": 1,
         "carpeta": "imagenes/productos/calzados/calzados.mujer/Botines negro/",
         "tipo": "Producto",
-        "categoria": "Calzados para mujes"
+        "categoria": "Calzados para mujer"
     },
     {
         "nombre": "Botines negros",
@@ -42,7 +42,7 @@
         "cantidad_fotos": 2,
         "carpeta": "imagenes/productos/calzados/calzados.mujer/Tenis puma/",
         "tipo": "Producto",
-        "categoria": "Calzados para mujes"
+        "categoria": "Calzados para mujer"
     },
     {
         "nombre": "Zapatillas Adriana pappel",
@@ -51,7 +51,7 @@
         "cantidad_fotos": 1,
         "carpeta": "imagenes/productos/calzados/calzados.mujer/Zapatillas Adriana pappel/",
         "tipo": "Producto",
-        "categoria": "Calzados para mujes"
+        "categoria": "Calzados para mujer"
     },
     {
         "nombre": "Zapatillas nine west",
@@ -60,7 +60,7 @@
         "cantidad_fotos": 1,
         "carpeta": "imagenes/productos/calzados/calzados.mujer/Zapatillas nine west/",
         "tipo": "Producto",
-        "categoria": "Calzados para mujes"
+        "categoria": "Calzados para mujer"
     },
     {
         "nombre": "CD PS4 | Mortal Kmobat XL",
