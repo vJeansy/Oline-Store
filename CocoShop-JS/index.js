@@ -77,7 +77,7 @@ function productCards(products){
 obtainProducts();
 // whatsapp messega function.
 function sendWhatsAppMessage(productName, imageUrl) {
-    const phone = "18098988575"; // Número de teléfono (con código de país).
+    const phone = "18099175579"; // Número de teléfono (con código de país).
     const message = `Hola, estoy interesado en el producto "${productName}". Aquí está la imagen: ${imageUrl}`;
     
     // Codificar el mensaje para que sea compatible con URL
