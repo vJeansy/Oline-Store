@@ -37,6 +37,45 @@ section nav a img{ /* img for logotype in navBar */
     display: block;
     }
 }
+#vestimenta-hombre,
+#calzados-hombre,
+#calzados-mujer,
+#ofertas,
+#novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card-img-top {
+    width: auto;
+    height: 39.7vh;
+}
+
+.comprar-btn {
+    width: 200px;
+    margin-top: 20px;
+}
+
+@media (max-width: 917px) {
+    #vestimenta-hombre,
+    #calzados-hombre,
+    #calzados-mujer,
+    #ofertas,
+    #novedades {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 428px) {
+        #vestimenta-hombre,
+        #calzados-hombre,
+        #calzados-mujer,
+        #ofertas,
+        #novedades {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
 /* footer style */
 footer ul li a, span{
     color: #727272;

@@ -21,80 +21,71 @@ document.getElementById('topLinks').innerHTML = `
             <li><a class="dropdown-item" href="">Configuracion de privacidad y cookies</a></li>
           </ul></li>
 </ul>`;
-// DOM vars.
-const firstProductLine = document.getElementById('vestimenta-hombre');
-const secondProductLine = document.getElementById('calzados-hombre');
-const thirdProductLine = document.getElementById('calzados-mujer');
-const fourthProductLine = document.getElementById('ofertas');
-const fivethProductLine = document.getElementById('novedades');
-var products;
-
+// Creating DOMs.
+var vestimentaHombre = document.getElementById('vestimenta-hombre');
+var calzadosHombre = document.getElementById('calzados-hombre');
+var calzadosMujer = document.getElementById('calzados-mujer');
+var ofertas = document.getElementById('ofertas');
+var novedades = document.getElementById('novedades');
 /* Obtain JSON info */
-function jsonProducts(){
-    axios({
-        method: 'GET',
-        url: 'CocoShop-JSON/productos.json'
-    }).then(res => {
-        products = res.data;
-        
-        // Filter and show products by category
-        const vestimentaHombre = products.filter(p => p.categoria === "Vestimenta para hombre");
-        const calzadosHombre = products.filter(p => p.categoria === "Calzados para hombre");
-        const calzadosMujer = products.filter(p => p.categoria === "Calzados para mujer");
-        const ofertas = products.filter(p => p.categoria === "Ofertas");
-        const novedades = products.filter(p => p.categoria === "Novedades");
-
-        showCard(vestimentaHombre, firstProductLine, vestimentaHombre.length);
-        showCard(calzadosHombre, secondProductLine, calzadosHombre.length);
-        showCard(calzadosMujer, thirdProductLine, calzadosMujer.length);
-        showCard(ofertas, fourthProductLine, ofertas.length);
-        showCard(novedades, fivethProductLine, novedades.length);
-
-    }).catch(err => {
-        console.log('Hay un error con los productos!', err);
+const obtainProducts = () => {
+    axios.get('CocoShop-JSON/productos.json')
+    .then(res => {
+        productCards(res.data);
+    })
+    .catch(err => {
+        console.log('Error loading products', err);
     });
-}
-
-// Container for product cards
-function rows(container, n_products){
-    container.innerHTML= '';
-    var nRows = Math.ceil(n_products / 3);
-    for(var i = 1; i <= nRows; i++){
-        container.innerHTML += `<div class="row" id="rows-${i}"></div>`;
-    }
-}
-
+};
 // Display cards on screen
-function showCard(art, container, n_products){
-    rows(container, n_products);
-    var nRows = Math.ceil(n_products / 3);
-    var id = 0;
-    for(var i = 1; i <= nRows; i++){
-        for(var j = 1; j <= 3; j++){
-            if(art[id] != undefined){
-                document.getElementById('rows-' + i).innerHTML += `
-                <div class="col-md-4 my-3">
+function productCards(products){
+    products.forEach(product => {
+        const container = product.categoria === 'Calzados para hombre'
+        ? calzadosHombre
+        : product.categoria === 'Vestimenta para hombre'
+        ? vestimentaHombre
+        : product.categoria === 'Calzados para mujer'
+        ? calzadosMujer
+        : product.categoria === 'Novedades'
+        ? novedades
+        : null;
+
+        if (container) {
+            container.innerHTML += `
                     <div class="card">
-                    <img src="${art[id].carpeta}1.jpg" alt="${art[id].nombre}" class="card-img-top" style="width: auto; height: 500px;">
-                    <div class="card-body text-justify">
-                        <h5 class="card-title fs-5">${art[id].nombre}</h5>
-                        <p class="card-text text-secondary fs-6">${art[id].descripcion}</p>
+                    <img src="${product.carpeta}1.jpg" alt="${product.nombre}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title fs-5">${product.nombre}</h5>
+                        <p class="card-text text-secondary fs-6">${product.descripcion}</p>
                         <span class="w-100">
-                        <h5 class="m-0 text-dark">RD$ ${art[id].precio.toLocaleString('en-US')}
-                        </h5></span>
-                        <div class="row">
-                        <button onclick="verFotos(${id})" class="btn btn-warning w-100 col m-2" data-toggle="modal" data-target="#Modal">Ver fotos</button>
-                        <button onclick="comprarProducto(${id})" class="btn btn-success w-100 col m-2" data-toggle="modal" data-target="#Modal">Comprar <i class="fab fa-whatsapp"></i></button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                `;
-                id++;
-            }
-        }
-    }
-}
+                        <h5 class="m-0 text-dark">RD$ ${product.precio.toLocaleString('en-US')}
+                        </h5>
+                        </span>
+                    <div class="comprar-btn">
+                        <button onclick="sendWhatsAppMessage('${product.nombre}', 'https://raw.githubusercontent.com/vJeansy/Oline-Store/refs/heads/main/${product.carpeta}1.jpg')"
+                         class="btn btn-success" data-toggle="modal"
+                          data-target="#Modal">Comprar <i class="bi bi-whatsapp"></i></button>
+                            </div>
+                                </div>
+                                    </div>
+                                    `
+                                };
+                            });
+                        };
 
 // Call function to obtain the filtered products.
-jsonProducts();
+obtainProducts();
+
+function sendWhatsAppMessage(productName, imageUrl) {
+    const phone = "8099175579"; // Número de teléfono (con código de país).
+    const message = `Hola, estoy interesado en el producto "${productName}". Aquí está la imagen: ${imageUrl}`;
+    
+    // Codificar el mensaje para que sea compatible con URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Crear el enlace de WhatsApp
+    const whatsappURL = `https://wa.me/${phone}?text=${encodedMessage}`;
+    
+    // Redirigir al usuario al enlace de WhatsApp
+    window.open(whatsappURL, '_blank');
+  }
