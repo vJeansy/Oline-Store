@@ -192,53 +192,71 @@
   </article>
   <!-- cloths categorization -->
   <section>
-    <div class="container">
+    <div class="container-fluid">
      <!-- Sub-sections -->
-   <h2 class="text-center">Descubrir más</h2>
-   <div class="container d-flex justify-content-center">
+      <div class="d-flex justify-content-between mt-5">
+        <h2 class="ms-5">Descubrir más</h2>
+        <div class="scroll-btn">
+          <button id="scrollLeft" class="btn btn-outline-dark translate-middle-y">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button id="scrollRight" class="btn btn-outline-dark translate-middle-y">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+   <div class="container-fluid d-flex overflow-auto" id="scrollContainer" style="white-space: nowrap; gap: 25px;">
      <!-- men -->
-     <div class="card text-bg-dark me-2" style="width: 25rem;">
+     <div class="card text-bg-dark me-2" style="min-width: 500px;">
        <img src="./imagenes/productos/mujer.hombre.niñ@/mujer.jpg" class="card-img" alt="mujer">
        <div class="card-img-overlay">
          <button type="button" class="btn btn-outline-secondary"><a href="" class="text-decoration-none text-black">Mujer</a></button>
        </div>
      </div>
      <!-- women -->
-     <div class="card text-bg-dark me-2" style="width: 25rem;">
+     <div class="card text-bg-dark me-2" style="min-width: 500px;">
        <img src="./imagenes/productos/mujer.hombre.niñ@/hombre.jpg" class="card-img" alt="mujer">
        <div class="card-img-overlay">
          <button type="button" class="btn btn-outline-secondary"><a href="" class="text-decoration-none text-black">Hombre</a></button>
        </div>
      </div>
      <!-- kids -->
-     <div class="card text-bg-dark me-2" style="width: 25rem;">
+     <div class="card text-bg-dark me-2" style="min-width: 500px;">
        <img src="./imagenes/productos/mujer.hombre.niñ@/niñ@.jpg" class="card-img" alt="mujer">
        <div class="card-img-overlay">
          <button type="button" class="btn btn-outline-secondary"><a href="" class="text-decoration-none text-black">Niño/a</a></button>
        </div>
      </div>
+     <!-- Adolecentes -->
+     <div class="card text-bg-dark me-2" style="min-width: 480px;">
+      <img src="./imagenes/productos/mujer.hombre.niñ@/adolecente.jpg" class="card-img" alt="mujer">
+      <div class="card-img-overlay">
+        <button type="button" class="btn btn-outline-secondary"><a href="" class="text-decoration-none text-black">Adolecentes</a></button>
+      </div>
+    </div>
    </div>
     </div>
   </section>
   <!-- Modals provided via JS -->
   <div id="signUpModalS"></div>
   <div id="signInModalS"></div>
+  <!-- footer -->
+  <footer class="container mt-4 border-top">
+    <div class="d-flex">
+      <span>© 2024 Jeansy Peña, Inc. Todos los derechos reservados</span>
+      <ul class="d-md-flex">
+        <li class="me-2"><a class="text-decoration-none" href="./CocoShop-HTML/termsOfUse.html">Términos de uso</a></li>
+        <li class="me-2"><a class="text-decoration-none" href="./CocoShop-HTML/termsOfSales.html"> Términos de venta</a></li>
+        <li class="me-2"><a class="text-decoration-none" href="./CocoShop-HTML/avisoLegal.html">Aviso Legal</a></li>
+        <li class="me-2"><a class="text-decoration-none" href="./CocoShop-HTML/policyofPrivacyAndCookies.html">Politica de privacidad y cookies</a></li>
+        <li class="me-2"><a class="text-decoration-none" href="">Configuracion de privacidad y cookies</a></li>
+      </ul>
+    </div>
+  </footer>
   <!-- JS files -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./CocoShop-JS/modals.js"></script>
   <script src="./CocoShop-JS/index.js"></script>
 </body>
-<footer class="container mt-4 border-top">
-  <div class="d-flex">
-    <span>© 2024 Jeansy Peña, Inc. Todos los derechos reservados</span>
-    <ul class="d-md-flex">
-      <li class="me-2"><a class="text-decoration-none" href="./CocoShop-HTML/termsOfUse.html">Términos de uso</a></li>
-      <li class="me-2"><a class="text-decoration-none" href="./CocoShop-HTML/termsOfSales.html"> Términos de venta</a></li>
-      <li class="me-2"><a class="text-decoration-none" href="./CocoShop-HTML/avisoLegal.html">Aviso Legal</a></li>
-      <li class="me-2"><a class="text-decoration-none" href="./CocoShop-HTML/policyofPrivacyAndCookies.html">Politica de privacidad y cookies</a></li>
-      <li class="me-2"><a class="text-decoration-none" href="">Configuracion de privacidad y cookies</a></li>
-    </ul>
-  </div>
-</footer>
 </html>

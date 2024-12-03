@@ -21,6 +21,18 @@ document.getElementById('topLinks').innerHTML = `
             <li><a class="dropdown-item" href="">Configuracion de privacidad y cookies</a></li>
           </ul></li>
 </ul>`;
+// Scroll btns
+const scrollContainer = document.getElementById('scrollContainer');
+const scrollLeft = document.getElementById('scrollLeft');
+const scrollRight = document.getElementById('scrollRight');
+
+scrollLeft.addEventListener('click', () => {
+    scrollContainer.scrollLeft -= 200;
+});
+
+scrollRight.addEventListener('click', () => {
+    scrollContainer.scrollLeft +=200;
+})
 // Creating DOMs.
 var vestimentaHombre = document.getElementById('vestimenta-hombre');
 var calzadosHombre = document.getElementById('calzados-hombre');
