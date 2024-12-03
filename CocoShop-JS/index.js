@@ -52,33 +52,38 @@ function productCards(products){
 
         if (container) {
             container.innerHTML += `
-                    <div class="card">
-                    <img src="${product.carpeta}1.jpg" alt="${product.nombre}" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title fs-5">${product.nombre}</h5>
-                        <p class="card-text text-secondary fs-6">${product.descripcion}</p>
-                        <span class="w-100">
-                        <h5 class="m-0 text-dark">RD$ ${product.precio.toLocaleString('en-US')}
-                        </h5>
+            <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="${product.carpeta}1.jpg" alt="${product.nombre.toUpperCase()}" class="img-fluid rounded-start" style="height: 226px;">
+                    </div>
+            <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">${product.nombre.toUpperCase()}</h5>
+                <p class="card-text">${product.descripcion}</p>
+                <p class="card-text"><small class="text-body-secondary">${product.categoria}</small></p>
+                <span class="w-100">
+                <h5 class="m-0 text-dark">RD$ ${product.precio.toLocaleString('en-US')}
+                    </h5>
                         </span>
-                    <div class="comprar-btn">
-                        <button onclick="sendWhatsAppMessage('${product.nombre}', 'https://raw.githubusercontent.com/vJeansy/Oline-Store/refs/heads/main/${product.carpeta}1.jpg')"
-                         class="btn btn-success" data-toggle="modal"
-                          data-target="#Modal">Comprar <i class="bi bi-whatsapp"></i></button>
+                            </div>
+            <div class="comprar-btn">
+                <button onclick="sendWhatsAppMessage('${product.nombre}', 'https://raw.githubusercontent.com/vJeansy/Oline-Store/refs/heads/main/${product.carpeta}1.jpg')"
+                    class="btn" data-toggle="modal"
+                    data-target="#Modal">Comprar <i class="bi bi-whatsapp"></i></button>
+                        </div>
                             </div>
                                 </div>
-                                    </div>
-                                    `
+                                    </div>`
                                 };
                             });
                         };
-
 // Call function to obtain the filtered products.
 obtainProducts();
 // whatsapp messega function.
 function sendWhatsAppMessage(productName, imageUrl) {
     const phone = "18099175579"; // Número de teléfono (con código de país).
-    const message = `Hola, estoy interesado en el producto "${productName}". Aquí está la imagen: ${imageUrl}`;
+    const message = `Hola, estoy interesado en el producto "${productName.toUpperCase()}". Aquí está la imagen: ${imageUrl}`;
     
     // Codificar el mensaje para que sea compatible con URL
     const encodedMessage = encodeURIComponent(message);

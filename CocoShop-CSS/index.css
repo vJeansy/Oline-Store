@@ -36,6 +36,7 @@ section nav a img{ /* img for logotype in navBar */
     .nav-item:hover .dropdown-menu{
     display: block;
     }
+/* desktop cards */
 }
 #vestimenta-hombre,
 #calzados-hombre,
@@ -44,19 +45,32 @@ section nav a img{ /* img for logotype in navBar */
 #novedades {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
-
-.card-img-top {
-    width: auto;
-    height: 39.7vh;
-}
-
+/* buy-button */
 .comprar-btn {
     width: 200px;
     margin-top: 20px;
+    margin: 10px;
 }
 
+.comprar-btn button,
+.comprar-btn button i {
+    background-color: #171515;
+    color: #efefef;
+}
+
+.comprar-btn button:hover,
+.comprar-btn button i:hover{
+    background-color: #171515;
+    color: #c3c3c3;
+}
+
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* cards */
 @media (max-width: 917px) {
     #vestimenta-hombre,
     #calzados-hombre,
@@ -66,6 +80,10 @@ section nav a img{ /* img for logotype in navBar */
     grid-template-columns: repeat(2, 1fr);
     }
 
+    .rounded-start {
+        width: 401px;
+    }
+
     @media (max-width: 428px) {
         #vestimenta-hombre,
         #calzados-hombre,
@@ -73,6 +91,10 @@ section nav a img{ /* img for logotype in navBar */
         #ofertas,
         #novedades {
         grid-template-columns: repeat(1, 1fr);
+        }
+
+        .rounded-start {
+            width: 401px;
         }
     }
 }
